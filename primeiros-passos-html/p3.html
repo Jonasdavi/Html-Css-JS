@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quis para programadores</title>
+</head>
+<body>
+    <!--os 3 abaixo sao apenas para divisão de conteudo da pagina (semântica)-->
+
+    <!--cabeçalho-->
+    <header>
+        <!--boa pratica (1 h1 por pagina)-->
+        <h1>Quis para programadores</h1>
+        <p>teste seus conhecimentos</p>
+    </header>
+
+    <!--conteudo principal-->
+    <main>
+        <!--dividindo o conteudo em sessões (semântica)-->
+        <!--section para introdução-->
+        <section>
+            <h2>Sobre esse quis</h2>
+            <p><strong>Este quis</strong> foi desenvolvido para <em>testar</em> seus conhecimentos em programação, como linguagens
+            de programação, conceitos basicos, e mais</p>
+            <p>voçe encontrarar diferentes tipos de perguntas, incluino multipla escolha, texto, pergunta de data. 
+            <br>Desafie-se com esse quis</p> <!--br = pular linha-->
+            <p>Voce poderá encontrar alguns acrônimos como <abbr title="HiperText Markup Language">HTML</abbr> 
+            e <abbr title="Cascading Style sheets">CSS</abbr>, que são comumente usados em questões 
+            relacionadas ao desenvolvimento web</p> <!--abbr é para botar o significado da palavra para ser visto
+            ao colocar o cursor em sima da palavra-->
+        </section>
+
+        <!--pergunta 1: multipla escolha-->
+        <section>
+            <h2>Pergunta 1: qual linguagem é usada para estruturar páginas web</h2>
+            <!--form é para entrada de informação-->
+            <form>
+                <!--input é pra entrada de dados do usuario-->
+                <!--radio é pra dizer que é multipla escolha-->
+                <!--p1a= pergunta 1 opção a-->
+                <!--name é para orientar em qual questao o input estar(pode conter varios inputs numa questao)-->
+                <!--value é pra dar valor a opcão em sí para quando for preciso enviar esse dado para algum lugar-->
+                <input type="radio" value="Python" id="p1a" name="pergunta1"> 
+                <label for="p1a">Python</label> <br> <!--br para pular linha em cada opção-->
+
+                <input type="radio" value="JavaScript" id="p1b" name="pergunta1"> 
+                <label for="p1b">JavaScript</label> <br>
+
+                <input type="radio" value="Html" id="p1c" name="pergunta1"> 
+                <label for="p1c">Html</label> <br>
+
+                <input type="radio" value="Ruby" id="p1d" name="pergunta1"> 
+                <label for="p1d">Ruby</label> <br>
+            </form>
+        </section>
+
+        <!--pergunta 2: texto-->
+        <section>
+            <h2>Pergunta 2: Na URL https://www.google.com o trecho google.com é o _____</h2>
+            <form >
+                <!--placeholder= minitexto que fica na caixa de texto quando ta vazia-->
+                <input type="text" name="pergunta2" id="p2" placeholder="Digite sua resposta...">
+            </form>
+        </section>
+
+        <!--pergunta 3: senha-->
+        <section>
+            <h2>Pergunta 3: Escreva um exemplo de senha forte</h2>
+            <form>
+                <input type="password" name="pergunta3" id="p3" placeholder="Digite sua senha...">
+            </form>
+        </section>
+        
+        <!--pergunta 4: data-->
+        <section>
+            <h2>Pergunta 4: Em que ano o HTML lançou sua primeira verção?</h2>
+            <form >
+                <input type="date" name="questao4" id="q4">
+            </form>
+        </section>
+
+        <!--pergunta 5: multipla escolha-->
+        <section>
+            <h2>Pergunta 5: Quais dessas tecnologias são consideradas linguagens de programação</h2>
+            <form>
+                <input type="checkbox" name="pergunta5" id="p5a" value="JavaScript">
+                <label for="p5a">JavaScript</label> <br>
+
+                <input type="checkbox" name="pergunta5" id="p5b" value="HTML">
+                <label for="p5b">HTML</label> <br>
+
+                <input type="checkbox" name="pergunta5" id="p5c" value="java">
+                <label for="p5c">Java</label> <br>
+
+                <input type="checkbox" name="pergunta5" id="p5d" value="CSS">
+                <label for="p5c">CSS</label> <br>
+            </form>
+        </section>
+
+        <!--pergunta 6: upload de arquivo-->
+        <section>
+            <h2>Pergunta 6: Faça upload de um arquivo HTML</h2>
+            <form >
+                <input type="file" name="questao6" id="p6">
+            </form>
+        </section>
+
+        <!--pergunta 7: menu suspenso-->
+        <section>
+            <h2>Pergunta 7: Selecionne o atributo do input que define o seu tipo:</h2>
+            <form>
+                <!--select é tipo o input, só que num menu suspenso-->
+                <select name="pergunta7" id="p7">
+                    <!--option sao as opcoes do menu-->
+                    <option value="id">id</option>
+                    <option value="type">type</option>
+                    <option value="placeholder">placeholder</option>
+                </select>
+            </form>
+        </section>
+
+        <!--pergunta 8: imagem-->
+        <section>
+            <h2>Pergunta 8: qual linguagem de programação é representada pela linguagem abaixo?</h2>
+            <!--imagem dentro da figure para poder usar o figcaption(legenda na imagem)-->
+            <figure>
+                <img src="./assets/download.jpeg" alt="Logotipo de uma linguagem">
+                <figcaption>Logotipo de uma linguagem de programação</figcaption>
+            </figure>
+            <form>
+                <input type="text" name="pergunta8" id="p8" placeholder="Digite sua resposta...">
+            </form>
+        </section>
+    </main>
+
+    <!--rodapé-->
+    <footer></footer>
+</body>
+</html>
