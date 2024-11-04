@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quis para programadores</title>
+    <title>Quiz para programadores</title>
 </head>
 <body>
     <!--os 3 abaixo sao apenas para divisão de conteudo da pagina (semântica)-->
@@ -20,8 +20,8 @@
         <!--dividindo o conteudo em sessões (semântica)-->
         <!--section para introdução-->
         <section>
-            <h2>Sobre esse quis</h2>
-            <p><strong>Este quis</strong> foi desenvolvido para <em>testar</em> seus conhecimentos em programação, como linguagens
+            <h2>Sobre esse quiz</h2>
+            <p><strong>Este quiz</strong> foi desenvolvido para <em>testar</em> seus conhecimentos em programação, como linguagens
             de programação, conceitos basicos, e mais</p>
             <p>voçe encontrarar diferentes tipos de perguntas, incluino multipla escolha, texto, pergunta de data. 
             <br>Desafie-se com esse quis</p> <!--br = pular linha-->
@@ -132,9 +132,99 @@
                 <input type="text" name="pergunta8" id="p8" placeholder="Digite sua resposta...">
             </form>
         </section>
+
+        <!--tabela de pontução-->
+        <section>
+            <h2>Tabela de pontuacao</h2>
+            <!--border= inserir borda na tabela-->
+            <table border="1">
+                <!--thead = cabeçalho da tabela (header)-->
+                <thead>
+                    <tr>
+                        <!--th pra dar o destaque header-->
+                        <th>Pontuacao</th>
+                        <th>Avaliacao</th>
+                    </tr>
+                </thead>
+                <!--tbody= corpo da tabela (conteudo principal em sí)-->
+                <tbody>
+                    <!--tr= table row= linha da tabela-->
+                    <tr>
+                        <!--td= table data= coluna da tabela-->
+                        <td>0-1</td>
+                        <td>Nao desista! Cada tentativa é uma oportunidade de aprender</td>
+                    </tr>
+                    <tr>
+                        <td>3-4</td>
+                        <td>Voce ainda precisa melhorar!</td>
+                    </tr>
+                    <tr>
+                        <td>5-7</td>
+                        <td>Bom! seu conhecimento com programação estar satisfatorio</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Perfeito! voce estar bem informado</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <!--colspan= quantidade de coluna que quero ocupar-->
+                        <td colspan="2">Boa sorte na proxima</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <!--lista de respostas-->
+        <section>
+            <h2>Verifique suas respostas</h2>
+            <!--details só mostra ao clicar-->
+            <details>
+                <!--summary= nomezinho no lugar de clicar do details-->
+                <summary>Clique aqui para ver respostas</summary>
+                <!--ul= lista com pontos-->
+                <!--ol= lista ordenada-->
+                <ol>
+                    <!--li= insercao de itens da lista-->
+                    <li>HTML</li>
+                    <li>Dominio</li>
+                    <li>1@!kKg</li>
+                    <li>1991</li>
+                    <li>JavaScript, Java</li>
+                    <li>arquivo .html</li>
+                    <li>Type</li>
+                    <li>Kotlin</li>
+                </ol>
+            </section>
+        </details>
+
+        <!--formulario de feedback-->
+        <section>
+            <h2>Nos der seu feedback</h2>
+            <form>
+                <!--fieldset= bordinha do formulario-->
+                <fieldset>
+                    <!--legenda da borda-->
+                    <legend>Informacoes de contato</legend>
+                    <label for="name">Nome:</label>
+                    <input type="text" name="name" id="name"><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email"> <br>
+
+                    <label for="Comentarios">Comentarios:</label> <br>
+                    <textarea name="comentarios" id="comentarios" rows="4" cols="30"></textarea> <br>
+                </fieldset>
+            </form>
+        </section>
     </main>
 
     <!--rodapé-->
-    <footer></footer>
+    <footer>
+        <!--&xx = simbolos especiais-->
+        <p>&copy <!--&lt--> Quis de programadores. Todos direitos reservados</p>
+        <p>Para conhecer mais quizes <a href="p1.html" target="_blank">clique aqui</a></p>
+    </footer>
 </body>
 </html>
