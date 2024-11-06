@@ -50,3 +50,49 @@ h2{
 input[type="radio"], /*ou*/ input[type="checkbox"]{
     accent-color: #FFE4E1; /*cor da bolinha de marcação*/
 }
+
+input[type="text"], input[type="password"], input[type="date"]{
+    width: 100%; /*largura*/
+    padding: 0.5rem;
+    border:2px solid rgba(79, 137, 199, 0.801);
+    outline: none; /*o q troca a borda ao clicar pra digitar*/
+    border-radius: 5px; /*arrendondamento da borda*/
+}
+
+input::placeholder{ /*mudar o elemento em sí (o placeholder nesse caso)*/
+    color: rgb(196, 103, 56); /*texto do place holder*/
+}
+
+select{
+    border-radius: 2px;
+    cursor: pointer;
+    color: rgb(196, 103, 56);
+    border: none;
+    outline: 1px solid rgba(79, 137, 199, 0.801);
+}
+
+img{
+    width: 5rem; /*largura*/
+    border-radius: 5px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse; /*tirar duplicacao da borda da tabela*/
+}
+
+th{
+    background-color: #9fffc4;
+    padding: 4rem;
+}
+
+td{
+    padding: 1rem;
+    text-align: center; /*alinha texto no centro*/
+
+}
+
+/*usar td apenas oq q sao descendentes de tfoot (filho, avô...)*/
+tfoot td{
+    background-color: rgb(162, 157, 233);
+}
