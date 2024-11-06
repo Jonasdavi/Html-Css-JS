@@ -1,0 +1,52 @@
+/*google fonts e import*/
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; /*conteudo + padding (tudo)*/
+    /*box-sizing: content-box; padrao, apenas altura e largura do conteudo (fonte)*/
+}
+
+body{
+    background-color: #F0FFFF;/*cor de fundo*/
+    /*os 3 abaixo vem la do google fonts*/
+    font-family: "Iceland", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    color: #191970; /*cor das letras*/
+}
+header{
+    border: 4px solid black;
+    /*margin: 2rem;/*pós borda*/
+    padding: 40px;/*antes da borda*/
+    text-align: center; /*local de conteudo*/
+    background-color: #DCDCDC; /*cor de fundo*/
+}
+h1{
+    padding: 1rem; /*unidade de medida relativa ao tamanho da tela*/
+}
+
+main{
+    padding: 2rem;
+    /*dos elementos filhos, o flex faz um padrao para todos os filhos*/
+    display: flex; /*flexbox*/
+    flex-direction: column; /*organizar felxibox na vertical*/
+    gap: 2rem; /*espaçamento entre filhos*/
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+h2{
+    color: 	#2F4F4F;
+}
+
+/*modificapao por atributo (só fazer caso os valores do atributos estejam correspondido)*/
+input[type="radio"], /*ou*/ input[type="checkbox"]{
+    accent-color: #FFE4E1; /*cor da bolinha de marcação*/
+}
