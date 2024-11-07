@@ -52,7 +52,7 @@ input[type="radio"], /*ou*/ input[type="checkbox"]{
     
 }
 
-input[type="text"], input[type="password"], input[type="date"]{
+input[type="text"], input[type="password"], input[type="date"], input[type= "email"], textarea[name="comentarios"]{
     width: 100%; /*largura*/
     padding: 0.5rem;
     border:2px solid rgba(79, 137, 199, 0.801);
@@ -98,4 +98,8 @@ td{
 /*usar td apenas oq q sao descendentes de tfoot (filho, avô...)*/
 tfoot td{
     background-color: rgb(162, 157, 233);
+}
+
+ol{
+    margin-left: 2rem;
 }
