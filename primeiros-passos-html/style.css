@@ -58,13 +58,14 @@ input[type="text"], input[type="password"], input[type="date"], input[type= "ema
     border:2px solid rgba(79, 137, 199, 0.801);
     outline: none; /*o q troca a borda ao clicar pra digitar*/
     border-radius: 5px; /*arrendondamento da borda*/
-    background-color: #20209be0;
-    color: aliceblue;
+    background-color: transparent;
+    color: rgb(116, 11, 11);
 }
 
-input::placeholder{ /*mudar o elemento em sí (o placeholder nesse caso)*/
+input::placeholder, textarea::placeholder{ /*mudar o elemento em sí (o placeholder nesse caso)*/
     color: rgb(196, 103, 56); /*texto do place holder*/
 }
+
 
 select{
     border-radius: 2px;
@@ -100,6 +101,65 @@ tfoot td{
     background-color: rgb(162, 157, 233);
 }
 
+details{
+    background-color: antiquewhite;
+    border-radius: 5px;
+}
+
+summary{
+    cursor: pointer;
+    color: rgb(10, 5, 77);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
 ol{
     margin-left: 2rem;
 }
+
+li{
+    padding: 0.3rem;
+}
+
+fieldset{
+    border: 2px solid royalblue;
+    border-radius: 5px;
+    padding: 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+legend{
+    /*  vertical / orizontal*/    
+    padding: 0 /**/ 0.5rem;
+    color: rgb(13, 11, 145);
+}
+
+button{
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #2a2a9e;
+    color: #0b0b50;
+    background-color: rgb(224, 215, 250);
+    cursor: pointer;
+}
+
+/*
+id>classe>elemento <- hierarquia
+classe (.nome): pode usar em varios elementos do html (mais comum pro css)
+id:(#nome): apenas um elemento pode ter o mesmo id (mais comum no js)*/
+
+/*acessando por classe*/
+.p-footer{
+    color: #F0FFFF;
+    background-color: #0b0b50;
+    padding: 0.5rem;
+}
+#a-footer{
+    color: aqua;
+}
+
+

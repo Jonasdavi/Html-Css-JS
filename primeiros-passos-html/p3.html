@@ -217,14 +217,26 @@
                 <fieldset>
                     <!--legenda da borda-->
                     <legend>Informacoes de contato</legend>
-                    <label for="name">Nome:</label>
-                    <input type="text" name="name" id="name"><br>
+                    <div>
+                        <label for="name">Nome:</label>
+                        <input type="text" name="name" id="name"><br>
+                    </div>
 
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email"> <br>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email"> <br>
 
-                    <label for="Comentarios">Comentarios:</label> <br>
-                    <textarea name="comentarios" id="comentarios" rows="4" cols="30"></textarea> <br>
+                    </div>
+                    
+                    <div>
+                        <label for="Comentarios">Comentarios:</label> <br>
+                        <textarea name="comentarios" id="comentarios" rows="4" cols="30"></textarea> <br>
+                    </div>
+
+                    <div>
+                        <button>Nos der seu feedback</button>
+                    </div>
+
                 </fieldset>
             </form>
         </section>
@@ -233,8 +245,8 @@
     <!--rodapé-->
     <footer>
         <!--&xx = simbolos especiais-->
-        <p>&copy <!--&lt--> Quis de programadores. Todos direitos reservados</p>
-        <p>Para conhecer mais quizes <a href="p1.html" target="_blank">clique aqui</a></p>
+        <p class="p-footer">&copy <!--&lt--> Quis de programadores. Todos direitos reservados</p>
+        <p class="p-footer">Para conhecer mais quizes <a id="a-footer" href="p1.html " target="_blank">clique aqui</a></p>
     </footer>
 </body>
 </html>
