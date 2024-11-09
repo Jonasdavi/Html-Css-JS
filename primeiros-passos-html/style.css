@@ -25,6 +25,8 @@ header{
     background-color: #DCDCDC; /*cor de fundo*/
 }
 h1{
+    /*remoção de elemento: display: none;
+    colocar devolta (padrao): display: inline;*/
     padding: 1rem; /*unidade de medida relativa ao tamanho da tela*/
 }
 
