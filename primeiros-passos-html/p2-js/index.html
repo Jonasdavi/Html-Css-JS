@@ -1,38 +1,28 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversor</title>
-
-    <link rel="stylesheet" href="./assets/style.css"> <!--boa pratica no inicio-->
+    <title>Gerador de senha</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <meta name="keywords" content="gerador de senhas">
 </head>
 <body>
-    <header>
-        <h1>Conversor de real para dollar</h1>
-    </header>
-    <main>
-        <div id="formulario">
-            <form>
-                <section>
-                    <span class="simbolo-dinheiro" id="dollar">US$</span>
-                    <input type="number" min="0" id="valor-calcular" class="valor"> <br>
-                </section>
+    <img class="logo" src="assets/download.png" alt="">
+    <main class="container-input">
+        <span>Tamanho <span id="valor"></span> caracteres</span>
+        <input id="slider" class="slider" type="range" min="5" max="25" value="5">
+        <button id="button" class="button-cta">Gerar senha</button>
 
-                <section>
-                    <span class="simbolo-dinheiro" id="reais">R$</span>
-                    <span id="result" class="valor">0</span><br>
-                </section>
-
-                <section>
-                    <button>Calcular</button>
-                    <button>Inverter</button>
-                </section>
-            </form>
-        </div>
+        
     </main>
-    <footer></footer>
 
-    <script src="assets/script.js"></script> <!--boa pratica no final-->
+    <div id="div-senha" class="div-senha">
+        <span class="title">Sua senha gerada foi:</span>
+        <span id="senha" class="senha">12345</span>
+        <span class="msg-copiar">clique na senha para copiar</span>
+    </div>
+    
 </body>
+<script src="assets/script.js"></script>
 </html>
