@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor</title>
+
+    <link rel="stylesheet" href="./assets/style.css"> <!--boa pratica no inicio-->
+</head>
+<body>
+    <header>
+        <h1>Conversor de real para dollar</h1>
+    </header>
+    <main>
+        <div id="formulario">
+            <form>
+                <section>
+                    <span class="simbolo-dinheiro" id="dollar">US$</span>
+                    <input type="number" min="0" id="valor-calcular" class="valor"> <br>
+                </section>
+
+                <section>
+                    <span class="simbolo-dinheiro" id="reais">R$</span>
+                    <span id="result" class="valor">0</span><br>
+                </section>
+
+                <section>
+                    <button>Calcular</button>
+                    <button>Inverter</button>
+                </section>
+            </form>
+        </div>
+    </main>
+    <footer></footer>
+
+    <script src="assets/script.js"></script> <!--boa pratica no final-->
+</body>
+</html>
